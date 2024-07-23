@@ -5,7 +5,7 @@ import numpy as np
 from sklearn.metrics import mean_absolute_error, classification_report, confusion_matrix, accuracy_score
 import sys
 
-fi = pd.read_excel("prompts_gold_values.xlsx")
+fi = pd.read_excel("../prompts_gold_values.xlsx")
 
 gold_num = int(sys.argv[1])
 
@@ -28,7 +28,7 @@ for p in prompts_of_interest:
 	print (p)
 
 responsenums_of_interest = []
-for file in glob.glob("dataset/topic_defined/responses7b/prompt*"):
+for file in glob.glob("../dataset/topic_defined/responses7b/prompt*"):
 	#We get the content of the prompt and we remove the last word, as it is just a number from 0 to 9
 	f=open(file)
 	prompt = " ".join(f.read().strip().split(" ")[:-1])
@@ -40,7 +40,7 @@ for file in glob.glob("dataset/topic_defined/responses7b/prompt*"):
 nolines = []
 goldvals = []
 for rnoi in responsenums_of_interest:
-	filename = "dataset/topic_defined/responses7b/response"+rnoi+"_clean.txt.analysis"
+	filename = "../dataset/topic_defined/responses7b/response"+rnoi+"_clean.txt.analysis"
 	f=open(filename)
 	result = json.load(f)
 	f.close()

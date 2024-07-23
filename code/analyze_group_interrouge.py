@@ -11,7 +11,7 @@ import re
 #experiment_ucloud_groupanalyses/experiment_ucloud_withoutotopic/responses/prompt40.txt
 
 results_notopic = {}
-for filename in glob.glob("dataset_groups/topic_undefined/groupresponses/groupno*analysis"):
+for filename in glob.glob("../dataset_groups/topic_undefined/groupresponses/groupno*analysis"):
 	filenamev = filename.split("/")
 	groupnumber = re.sub("[^0-9]","",filenamev[-1])
 	promptfile = "/".join(filenamev[:-2])+"/responses/prompt"+groupnumber+"0.txt"
@@ -27,7 +27,7 @@ for filename in glob.glob("dataset_groups/topic_undefined/groupresponses/groupno
 
 results_topic = {}
 
-for filename in glob.glob("dataset_groups/topic_defined/groupresponses/groupno*analysis"):
+for filename in glob.glob("../dataset_groups/topic_defined/groupresponses/groupno*analysis"):
 	filenamev = filename.split("/")
 	groupnumber = re.sub("[^0-9]","",filenamev[-1])
 	promptfile = "/".join(filenamev[:-2])+"/responses/prompt"+groupnumber+"0.txt"

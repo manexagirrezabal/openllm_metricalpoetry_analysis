@@ -11,14 +11,14 @@ def flatten(l):
 
 
 
-fi = pd.read_excel("prompts_gold_values.xlsx")
+fi = pd.read_excel("../prompts_gold_values.xlsx")
 
 gold_num = int(sys.argv[1])
 
 prompts_of_interest = list(fi[fi['No of syllables per line'] == gold_num]['Unnamed: 2'])
 
 responsenums_of_interest = []
-for file in glob.glob("dataset/topic_defined/responses7b/prompt*"):
+for file in glob.glob("../dataset/topic_defined/responses7b/prompt*"):
 	#We get the content of the prompt and we remove the last word, as it is just a number from 0 to 9
 	f=open(file)
 	prompt = " ".join(f.read().strip().split(" ")[:-1])
@@ -29,7 +29,7 @@ for file in glob.glob("dataset/topic_defined/responses7b/prompt*"):
 
 nosylls = []
 for rnoi in responsenums_of_interest:
-	filename = "dataset/topic_defined/responses7b/response"+rnoi+"_clean.txt.analysis"
+	filename = "../dataset/topic_defined/responses7b/response"+rnoi+"_clean.txt.analysis"
 	f=open(filename)
 	result = json.load(f)
 	f.close()
