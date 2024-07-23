@@ -1,6 +1,6 @@
 # Zero-Shot Metrical Poetry Generation with Open Language Models: a Quantitative Analysis
 
-This is the official repository for our paper published in ICCC'24. All the information will soon be uploaded here.
+This is the official repository for our paper published in ICCC'24. Documentation will soon be updated.
 
 # References:
 
