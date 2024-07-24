@@ -13,7 +13,7 @@ The repository is structured as follows:
     - `topics.txt`: (If defined) This is a list of different topics used
     - Directories `responses` and `responses7b`: The results for the 70B and 7B models, respectively. In these folder, you will find the following files:
       - `promptX.txt`: This contains a prompt and a number at the end. Please ignore this last number, as it was not used for prompting, but just to index each prompt within a group (1-10).
-      - `responseX.txt`: The response that corresponds to promptX.txt, which was returned by the LLM.
+      - `responseX.txt`: The response that corresponds to `promptX.txt`, which was returned by the LLM.
       - `responseX_clean.txt`: The cleaned text, where unnecessary information was removed using regular expressions (Check prompts subsection in Agirrezabal and Gonçalo Oliveira (2024)).
       - `responseX_clean.txt.analysis`: Analysis returned by Erato, in JSON format, which corresponds to the cleaned text.
   - `dataset_groups`: This directory contains the same information as `dataset`, but it is organized in groups for the simplicity of analysis. It also includes the group analyses, where the overlap between poems is calculated. This was employed to analyze the diversity of the generated poems (Table 5 in the article).
