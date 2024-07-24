@@ -18,7 +18,7 @@ The repository is structured as follows:
       - `responseX_clean.txt.analysis`: Analysis returned by Erato, in JSON format, which corresponds to the cleaned text.
   - `dataset_groups`: This directory contains the same information as `dataset`, but it is organized in groups for the simplicity of analysis. It also includes the group analyses, where the overlap between poems is calculated. This was employed to analyze the diversity of the generated poems (Table 5 in the article).
 
-# References:
+# Citation:
 
 Agirrezabal, Manex, and Hugo Gonçalo Oliveira. "Zero-Shot Metrical Poetry Generation with Open Language Models: a Quantitative Analysis.", in Proceedings of the International Conference on Computational Creativity ICCC'24, Jönkoping, Sweden, 2024. [link to paper](https://computationalcreativity.net/iccc24/papers/ICCC24_paper_164.pdf)
 
